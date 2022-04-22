@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Hello world!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1>
+      Test Your Memory!
+    </h1>
+    <p>
+      Hello and welcome to what may be the most challenging memory game in history. Look forward to expanding your mind and testing your boundaries :)
+    </p>
+    <button id="startBtn" onclick= "startGame()">Start</button>
+    <button id="stopBtn" class= "hidden" onclick= "stopGame()">Stop</button>
+    
+    <div id="gameButtonArea">
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()"><img src="https://cdn.glitch.global/c3d2c06f-122d-4ed7-b87f-f0ca04c0e5f0/arsenal.png?v=1650585381234" alt="Arsenal" width="150" height="150" style="vertical-align:top"/></button>
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"><img src="https://cdn.glitch.global/c3d2c06f-122d-4ed7-b87f-f0ca04c0e5f0/chelsea.png?v=1650588345498" alt="Chelsea" width="150" height="150" style="vertical-align:top"/></button>
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"><img src="https://cdn.glitch.global/c3d2c06f-122d-4ed7-b87f-f0ca04c0e5f0/liverpool.png?v=1650588350088" alt="Liverpool" width="120" height="150" style="vertical-align:top"/></button>
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"><img src="https://cdn.glitch.global/c3d2c06f-122d-4ed7-b87f-f0ca04c0e5f0/tottenham.png?v=1650588359904" alt="Tottenham" width="150" height="150" style="vertical-align:top"/></button>
+      <button id="button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone()"><img src="https://cdn.glitch.global/c3d2c06f-122d-4ed7-b87f-f0ca04c0e5f0/man%20city.png?v=1650588356061" alt="City" width="150" height="180" style="vertical-align:top"/></button>
+    </div>
+    
+
+  </body>
+</html>
